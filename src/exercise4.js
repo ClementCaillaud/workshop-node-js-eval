@@ -12,14 +12,20 @@ exports.run = function(input)
 
 function myFunction(numbers, letters)
 {
+  //Initialisation de la phrase
   var result = "";
+
+  //Pour chaque élément du tableau...
   for(var i=0; i<numbers.length; i++)
   {
+    //On écrit la phrase correspondante
     result += "The value of "+letters[i]+" is "+numbers[i];
+    //Si ce n'est pas le dernier élément alors on ajoute une virgule
     if(letters[i+1])
     {
       result += ", ";
     }
   }
+  //Retourne la phrase voulue
   return result;
 }
